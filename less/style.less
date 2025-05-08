@@ -1,0 +1,127 @@
+// Purdue Brand Colors
+@boilermakerGold: #CFB991;
+@black: #000000;
+@aged: #8E6F3E;
+@rush: #DAAA00;
+@field: #DDB945;
+@dust: #EBD99F;
+@steel: #555960;
+@coolGray: #6F727B;
+@railwayGray: #9D9795;
+@steam: #C4BFC0;
+
+// Fonts
+@font-primary: 'Franklin Gothic Medium', sans-serif; // Acumin Pro
+@font-headline: Impact, sans-serif; // United Sans
+@font-serif: Georgia, serif; // Source Serif Pro
+
+body {
+  background-color: @dust;
+  font-family: @font-primary;
+  color: @black;
+}
+
+h1, h2, h5 {
+  font-family: @font-headline;
+  color: @black;
+}
+
+header, footer {
+  background-color: @steel;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.navbar {
+  background-color: @field !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: @black !important;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.card {
+  border: 2px solid @boilermakerGold;
+  transition: transform 0.2s;
+  cursor: pointer;
+  background-color: white;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card .ratio img {
+  object-fit: cover;
+}
+
+.btn-dark {
+  background-color: @black;
+  color: white;
+  font-weight: bold;
+  font-family: @font-primary;
+}
+
+.btn-dark:hover {
+  background-color: darken(@black, 10%);
+}
+
+.modal-header {
+  background-color: @boilermakerGold;
+  color: @black;
+  font-family: @font-headline;
+}
+
+.modal-body {
+  background-color: @steam;
+  font-family: @font-primary;
+  color: @black;
+}
+
+.modal-footer {
+  background-color: @dust;
+}
+
+.quiz-container {
+  background: @steam;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 3rem;
+  font-family: @font-primary;
+}
+
+.question {
+  margin-bottom: 2rem;
+}
+
+.result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.btn-submit {
+  background-color: @boilermakerGold;
+  border: none;
+  font-weight: bold;
+  color: @black;
+  font-family: @font-primary;
+}
+
+.btn-submit:hover {
+  background-color: @rush;
+}
+
+.content-box {
+  background-color: @steam;
+  color: @black;
+}

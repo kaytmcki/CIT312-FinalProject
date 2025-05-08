@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIT Live Advert</title>
+  <link rel="stylesheet" href="less/style.less"/>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-steam">
+<!-- Header with Hamburger Menu - Includes responsive navbar for navigating between key areas -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="font-family: Impact;">CIT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Career Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="software.html">Software Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cybersecurity.html">Cybersecurity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="networking.html">Networking</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data Management</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Main Page Title -->
+  <header class="text-center py-4">
+    <h1 style="font-family: Impact, sans-serif;">COMPUTING & INFORMATION TECHNOLOGY</h1>
+  </header>
+
+  <main class="container py-5">
+    <!-- Quadrant Grid -->
+    <!-- Grid of Four Pathway Cards with Icons and Modals -->
+    <!-- Each quadrant is clickable and launches a modal with CIT pathway info -->
+    <div class="row row-cols-1 row-cols-md-2 g-3 text-center mb-5">
+      <div class="col">
+        <div class="card h-100 clickable" data-bs-toggle="modal" data-bs-target="#modalSoftware" role="button" aria-label="Explore Software Development">
+          <div class="ratio ratio-1x1 d-flex justify-content-center align-items-center">
+            <img src="assets/1L.png" alt="Software Icon">
+          </div>
+          <div class="fw-bold bg-white py-2">SOFTWARE</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 clickable" data-bs-toggle="modal" data-bs-target="#modalNetworking" role="button" aria-label="Explore Networking">
+          <div class="ratio ratio-1x1 d-flex justify-content-center align-items-center">
+            <img src="assets/1R.png" alt="Networking Icon">
+          </div>
+          <div class="fw-bold bg-white py-2">NETWORKING</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 clickable" data-bs-toggle="modal" data-bs-target="#modalData" role="button" aria-label="Explore Data Management">
+          <div class="ratio ratio-1x1 d-flex justify-content-center align-items-center">
+            <img src="assets/2L.png" alt="Data Icon">
+          </div>
+          <div class="fw-bold bg-white py-2">DATA MANAGEMENT</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 clickable" data-bs-toggle="modal" data-bs-target="#modalCyber" role="button" aria-label="Explore Cybersecurity">
+          <div class="ratio ratio-1x1 d-flex justify-content-center align-items-center">
+            <img src="assets/2R.png" alt="Cybersecurity Icon">
+          </div>
+          <div class="fw-bold bg-white py-2">CYBERSECURITY</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Applied Computing Divider -->
+    <div class="bg-white text-center py-4 border-top border-bottom border-dark mb-4">
+      <h2 class="fw-bold m-0" style="font-family: Impact, sans-serif; font-size: 2rem;">APPLIED COMPUTING</h2>
+    </div>
+
+
+    <!-- CIT Logo + Careers Grid -->
+    <div class="row align-items-center text-center mb-4">
+      <div class="col-md-4 d-flex flex-column gap-1">
+        <span>📱 Mobile Apps Developer</span>
+        <span>💻 Software Developer</span>
+        <span>🌐 Web Programmer</span>
+        <span>🧠 Consultant</span>
+        <span>🖥️ Web Developer</span>
+        <span>👨‍🏫 Instructor</span>
+        <span>📝 Technical Writer</span>
+        <span>🎨 UX/UI Designer</span>
+      </div>
+
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img src="assets/logo.png" alt="CIT Logo" class="img-fluid my-3" style="max-width: 280px;">
+      </div>
+
+
+      <div class="col-md-4 d-flex flex-column gap-1">
+        <span>⚙️ DevOps Engineer</span>
+        <span>🔐 Cybersecurity Expert</span>
+        <span>🗄️ Database Administrator</span>
+        <span>🔎 Security Analyst</span>
+        <span>📊 Data Analyst</span>
+        <span>👨‍💻 Coder</span>
+        <span>🧪 Test Engineer</span>
+        <span>💾 Hardware Engineer</span>
+      </div>
+    </div>
+        <div class="row justify-content-center text-center g-4 mb-5">
+          <div class="col-md-3 d-flex flex-column gap-1">
+            <span>🏗️ Network Architect</span>
+            <span>🔬 Data Research Scientist</span>
+            <span>🧱 Full Stack Developer</span>
+            <span>🎮 Games Developer</span>
+          </div>
+          <div class="col-md-3 d-flex flex-column gap-1">
+            <span>🧰 Network Administrator</span>
+            <span>🌍 Web Architect</span>
+            <span>📈 Industry Analyst</span>
+            <span>🧑‍💼 Chief Information Officer</span>
+          </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="text-center mb-5">
+          <h2>CIT Career Quiz</h2>
+          <p>Answer 10 questions to find your best-fit CIT pathway!</p>
+          <a class="btn btn-dark fw-bold" href="quiz.html" aria-label="Start Career Path Quiz">Take the Quiz</a>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-white text-center py-3">
+        <p>&copy; 2025 Purdue University - CIT</p>
+      </footer>
+
+      <!-- Modals -->
+      <!-- Software Modal -->
+      <div class="modal fade" id="modalSoftware" tabindex="-1" aria-labelledby="modalSoftwareLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalSoftwareLabel">Software Development</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Software Development is a foundational area of computing focused on building scalable, maintainable, and secure applications. As technology evolves, skilled developers are in critical demand across industries.</p>
+              <p>In this concentration, you will learn:</p>
+              <ul>
+                <li>Programming in JavaScript, Python, and Java</li>
+                <li>Web and mobile application development</li>
+                <li>Version control and collaborative coding (Git)</li>
+                <li>UI/UX design principles</li>
+                <li>Database integration and RESTful APIs</li>
+              </ul>
+              <p>Example Careers:</p>
+              <ul>
+                <li>Software Engineer</li>
+                <li>Front-End or Full-Stack Developer</li>
+                <li>Mobile App Developer</li>
+                <li>Technical Consultant</li>
+                <li>Web Developer</li>
+                <li>Game Developer</li>
+              </ul>
+              <p><strong>Recommended Degree:</strong> B.S. in Software Development</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cybersecurity Modal -->
+      <div class="modal fade" id="modalCyber" tabindex="-1" aria-labelledby="modalCyberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCyberLabel">Cybersecurity</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Cybersecurity professionals protect systems, data, and infrastructure from ever-growing threats. This area is critical as both public and private sectors face increasing cyberattacks and data breaches.</p>
+              <p>In this concentration, you will study:</p>
+              <ul>
+                <li>Network and system security fundamentals</li>
+                <li>Ethical hacking and penetration testing</li>
+                <li>Security protocols and encryption</li>
+                <li>Incident detection and response</li>
+                <li>Cyber law and digital forensics</li>
+              </ul>
+              <p>Example Careers:</p>
+              <ul>
+                <li>Security Analyst</li>
+                <li>Penetration Tester</li>
+                <li>Cybersecurity Engineer</li>
+                <li>Incident Responder</li>
+                <li>Security Analyst</li>
+                <li>Penetration Tester</li>
+                <li>Cybersecurity Engineer</li>
+                <li>Incident Responder</li>
+              </ul>
+              <p><strong>Recommended Degree:</strong> B.S. in Cybersecurity</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Networking Modal -->
+      <div class="modal fade" id="modalNetworking" tabindex="-1" aria-labelledby="modalNetworkingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalNetworkingLabel">Networking</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Networking ensures devices, systems, and users stay securely connected across the globe. Skilled network professionals are essential for businesses, healthcare, government, and emerging technologies like IoT.</p>
+              <p>In this concentration, you will gain skills in:</p>
+              <ul>
+                <li>Network configuration (LAN/WAN)</li>
+                <li>Cisco routers and switches</li>
+                <li>Wireless and cloud networking</li>
+                <li>Network troubleshooting and diagnostics</li>
+                <li>Infrastructure security</li>
+              </ul>
+              <p>Example Careers:</p>
+              <ul>
+                <li>Network Administrator</li>
+                <li>Systems Engineer</li>
+                <li>Infrastructure Architect</li>
+                <li>Telecom Support Specialist</li>
+                <li>Network Technician</li>
+              </ul>
+              <p><strong>Recommended Degree:</strong> B.S. in Network Engineering Technology</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Management Modal -->
+      <div class="modal fade" id="modalData" tabindex="-1" aria-labelledby="modalDataLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalDataLabel">Data Management</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Data Management empowers organizations to turn raw data into actionable insights. With the explosion of big data, professionals in this field are vital for effective business intelligence, research, and decision-making.</p>
+              <p>You will learn to:</p>
+              <ul>
+                <li>Design and manage relational databases</li>
+                <li>Write complex SQL queries</li>
+                <li>Visualize data with tools like Power BI or Tableau</li>
+                <li>Use Python for data analysis</li>
+                <li>Understand data privacy and governance</li>
+              </ul>
+              <p>Example Careers:</p>
+              <ul>
+                <li>Data Analyst</li>
+                <li>Database Administrator</li>
+                <li>BI Developer</li>
+                <li>Data Engineer</li>
+                <li>Business Intelligence Developer</li>
+              </ul>
+              <p><strong>Recommended Degree:</strong> B.S. in Data Analytics or Information Systems</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS -->
+      <!-- Script to Auto-Open Modal Based on Quiz Result -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const result = localStorage.getItem("quizResult");
+          if (result) {
+            const modalMap = {
+              software: "modalSoftware",
+              cyber: "modalCyber",
+              network: "modalNetworking",
+              data: "modalData"
+            };
+            const modalId = modalMap[result];
+            if (modalId) {
+              const modal = new bootstrap.Modal(document.getElementById(modalId));
+              modal.show();
+              localStorage.removeItem("quizResult");
+            }
+          }
+        });
+      </script>
+    </body>
+    </html>
